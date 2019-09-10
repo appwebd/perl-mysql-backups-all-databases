@@ -9,12 +9,13 @@ git clone https://github.com/appwebd/perl-mysql-backups-all-databases.git
 
 ## Customize
 
-You must customize the following lines according to your installation (open this perl script with your favorite editor)
+You must customize the following in your favorite terminal (Or any DCL command prompt). Set your local password with the following command 
+
 ```
-use constant CONS_PATH_TMP =>'/tmp';
-use constant CONS_USER =>'root';
-use constant CONS_PASS =>'';
-use constant CONS_PATH_OUTPUT=>'/backups/backups/mysql/';
+
+ mysql_config_editor set --login-path=local --host=localhost  --user=username --password 
+
+
 ```
 
 ## Schedule Tasks on Linux (using Crontab)
