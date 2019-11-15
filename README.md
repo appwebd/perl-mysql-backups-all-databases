@@ -33,7 +33,7 @@ add the following (like example):
 or for your backup configuration on Amazon S3, you can perform:
 
 ```
-0 0 * * * /home/<user account>/bin/mysqlbackups.sh 2>&1 | mail -s "Cronjob ouput" yourname@yourdomain.com
+0 0 * * * /home/<user account>/bin/mysqlbackups-s3.pl 2>&1 | mail -s "Cronjob ouput" yourname@yourdomain.com
 ```
 
 
